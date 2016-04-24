@@ -1,0 +1,12 @@
+name: Future Imperferct
+type: theme
+base theme: stable
+description: Drupal 8 theme based on Future Imperfect theme. http://html5up.net/future-imperfect
+core: 8.x
+libraries:
+  - future_imperfect/global-styling
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
