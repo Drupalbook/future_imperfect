@@ -1,0 +1,13 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}
+      css/print.css: { media: print }
+  js:
+    js/skel.min.js: {}
+    js/util.js: {}
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
