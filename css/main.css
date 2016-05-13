@@ -1297,11 +1297,11 @@ hr {
     padding: 0; }
 
 /* Button */
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
+#wrapper input[type="submit"],
+#wrapper input[type="reset"],
+#wrapper input[type="button"],
+#wrapper button,
+#wrapper .button {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -1327,88 +1327,88 @@ button,
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap; }
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  input[type="button"]:hover,
-  button:hover,
-  .button:hover {
+  #wrapper input[type="submit"]:hover,
+  #wrapper input[type="reset"]:hover,
+  #wrapper input[type="button"]:hover,
+  #wrapper button:hover,
+  #wrapper .button:hover {
     box-shadow: inset 0 0 0 1px #2ebaae;
     color: #2ebaae !important; }
-    input[type="submit"]:hover:active,
-    input[type="reset"]:hover:active,
-    input[type="button"]:hover:active,
-    button:hover:active,
-    .button:hover:active {
+    #wrapper input[type="submit"]:hover:active,
+    #wrapper input[type="reset"]:hover:active,
+    #wrapper input[type="button"]:hover:active,
+    #wrapper button:hover:active,
+    #wrapper .button:hover:active {
       background-color: rgba(46, 186, 174, 0.05); }
-  input[type="submit"]:before, input[type="submit"]:after,
-  input[type="reset"]:before,
-  input[type="reset"]:after,
-  input[type="button"]:before,
-  input[type="button"]:after,
-  button:before,
-  button:after,
-  .button:before,
-  .button:after {
+  #wrapper input[type="submit"]:before, #wrapper input[type="submit"]:after,
+  #wrapper input[type="reset"]:before,
+  #wrapper input[type="reset"]:after,
+  #wrapper input[type="button"]:before,
+  #wrapper input[type="button"]:after,
+  #wrapper button:before,
+  #wrapper button:after,
+  #wrapper .button:before,
+  #wrapper .button:after {
     color: #aaaaaa;
     position: relative; }
-  input[type="submit"]:before,
-  input[type="reset"]:before,
-  input[type="button"]:before,
-  button:before,
-  .button:before {
+  #wrapper input[type="submit"]:before,
+  #wrapper input[type="reset"]:before,
+  #wrapper input[type="button"]:before,
+  #wrapper button:before,
+  #wrapper .button:before {
     left: -1em;
     padding: 0 0 0 0.75em; }
-  input[type="submit"]:after,
-  input[type="reset"]:after,
-  input[type="button"]:after,
-  button:after,
-  .button:after {
+  #wrapper input[type="submit"]:after,
+  #wrapper input[type="reset"]:after,
+  #wrapper input[type="button"]:after,
+  #wrapper button:after,
+  #wrapper .button:after {
     left: 1em;
     padding: 0 0.75em 0 0; }
-  input[type="submit"].fit,
-  input[type="reset"].fit,
-  input[type="button"].fit,
-  button.fit,
-  .button.fit {
+  #wrapper input[type="submit"].fit,
+  #wrapper input[type="reset"].fit,
+  #wrapper input[type="button"].fit,
+  #wrapper button.fit,
+  #wrapper .button.fit {
     display: block;
     margin: 0 0 1em 0;
     width: 100%; }
-  input[type="submit"].big,
-  input[type="reset"].big,
-  input[type="button"].big,
-  button.big,
-  .button.big {
+  #wrapper input[type="submit"].big,
+  #wrapper input[type="reset"].big,
+  #wrapper input[type="button"].big,
+  #wrapper button.big,
+  #wrapper .button.big {
     font-size: 0.7em;
     padding: 0 3em; }
-  input[type="submit"].small,
-  input[type="reset"].small,
-  input[type="button"].small,
-  button.small,
-  .button.small {
+  #wrapper input[type="submit"].small,
+  #wrapper input[type="reset"].small,
+  #wrapper input[type="button"].small,
+  #wrapper button.small,
+  #wrapper .button.small {
     font-size: 0.5em; }
-  input[type="submit"].disabled, input[type="submit"]:disabled,
-  input[type="reset"].disabled,
-  input[type="reset"]:disabled,
-  input[type="button"].disabled,
-  input[type="button"]:disabled,
-  button.disabled,
-  button:disabled,
-  .button.disabled,
-  .button:disabled {
+  #wrapper input[type="submit"].disabled, #wrapper input[type="submit"]:disabled,
+  #wrapper input[type="reset"].disabled,
+  #wrapper input[type="reset"]:disabled,
+  #wrapper input[type="button"].disabled,
+  #wrapper input[type="button"]:disabled,
+  #wrapper button.disabled,
+  #wrapper button:disabled,
+  #wrapper .button.disabled,
+  #wrapper .button:disabled {
     -moz-pointer-events: none;
     -webkit-pointer-events: none;
     -ms-pointer-events: none;
     pointer-events: none;
     color: rgba(160, 160, 160, 0.3) !important; }
-    input[type="submit"].disabled:before, input[type="submit"]:disabled:before,
-    input[type="reset"].disabled:before,
-    input[type="reset"]:disabled:before,
-    input[type="button"].disabled:before,
-    input[type="button"]:disabled:before,
-    button.disabled:before,
-    button:disabled:before,
-    .button.disabled:before,
-    .button:disabled:before {
+    #wrapper input[type="submit"].disabled:before, #wrapper input[type="submit"]:disabled:before,
+    #wrapper input[type="reset"].disabled:before,
+    #wrapper input[type="reset"]:disabled:before,
+    #wrapper input[type="button"].disabled:before,
+    #wrapper input[type="button"]:disabled:before,
+    #wrapper button.disabled:before,
+    #wrapper button:disabled:before,
+    #wrapper .button.disabled:before,
+    #wrapper .button:disabled:before {
       color: rgba(160, 160, 160, 0.3) !important; }
 
 /* Form */

@@ -1,6 +1,6 @@
 name: Future Imperferct
 type: theme
-base theme: stable
+base theme: classy
 description: Drupal 8 theme based on Future Imperfect theme. http://html5up.net/future-imperfect
 core: 8.x
 libraries:
