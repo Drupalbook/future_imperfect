@@ -1131,7 +1131,6 @@ a {
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
   color: inherit;
   text-decoration: none; }
   a:before {
@@ -1299,8 +1298,6 @@ hr {
 /* Button */
 #wrapper input[type="submit"],
 #wrapper input[type="reset"],
-#wrapper input[type="button"],
-#wrapper button,
 #wrapper .button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1329,70 +1326,48 @@ hr {
   white-space: nowrap; }
   #wrapper input[type="submit"]:hover,
   #wrapper input[type="reset"]:hover,
-  #wrapper input[type="button"]:hover,
-  #wrapper button:hover,
   #wrapper .button:hover {
     box-shadow: inset 0 0 0 1px #2ebaae;
     color: #2ebaae !important; }
     #wrapper input[type="submit"]:hover:active,
     #wrapper input[type="reset"]:hover:active,
-    #wrapper input[type="button"]:hover:active,
-    #wrapper button:hover:active,
     #wrapper .button:hover:active {
       background-color: rgba(46, 186, 174, 0.05); }
   #wrapper input[type="submit"]:before, #wrapper input[type="submit"]:after,
   #wrapper input[type="reset"]:before,
   #wrapper input[type="reset"]:after,
-  #wrapper input[type="button"]:before,
-  #wrapper input[type="button"]:after,
-  #wrapper button:before,
-  #wrapper button:after,
   #wrapper .button:before,
   #wrapper .button:after {
     color: #aaaaaa;
     position: relative; }
   #wrapper input[type="submit"]:before,
   #wrapper input[type="reset"]:before,
-  #wrapper input[type="button"]:before,
-  #wrapper button:before,
   #wrapper .button:before {
     left: -1em;
     padding: 0 0 0 0.75em; }
   #wrapper input[type="submit"]:after,
   #wrapper input[type="reset"]:after,
-  #wrapper input[type="button"]:after,
-  #wrapper button:after,
   #wrapper .button:after {
     left: 1em;
     padding: 0 0.75em 0 0; }
   #wrapper input[type="submit"].fit,
   #wrapper input[type="reset"].fit,
-  #wrapper input[type="button"].fit,
-  #wrapper button.fit,
   #wrapper .button.fit {
     display: block;
     margin: 0 0 1em 0;
     width: 100%; }
   #wrapper input[type="submit"].big,
   #wrapper input[type="reset"].big,
-  #wrapper input[type="button"].big,
-  #wrapper button.big,
   #wrapper .button.big {
     font-size: 0.7em;
     padding: 0 3em; }
   #wrapper input[type="submit"].small,
   #wrapper input[type="reset"].small,
-  #wrapper input[type="button"].small,
-  #wrapper button.small,
   #wrapper .button.small {
     font-size: 0.5em; }
   #wrapper input[type="submit"].disabled, #wrapper input[type="submit"]:disabled,
   #wrapper input[type="reset"].disabled,
   #wrapper input[type="reset"]:disabled,
-  #wrapper input[type="button"].disabled,
-  #wrapper input[type="button"]:disabled,
-  #wrapper button.disabled,
-  #wrapper button:disabled,
   #wrapper .button.disabled,
   #wrapper .button:disabled {
     -moz-pointer-events: none;
@@ -1403,10 +1378,6 @@ hr {
     #wrapper input[type="submit"].disabled:before, #wrapper input[type="submit"]:disabled:before,
     #wrapper input[type="reset"].disabled:before,
     #wrapper input[type="reset"]:disabled:before,
-    #wrapper input[type="button"].disabled:before,
-    #wrapper input[type="button"]:disabled:before,
-    #wrapper button.disabled:before,
-    #wrapper button:disabled:before,
     #wrapper .button.disabled:before,
     #wrapper .button:disabled:before {
       color: rgba(160, 160, 160, 0.3) !important; }
@@ -2200,15 +2171,15 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000; }
+  z-index: _90; }
   #header a {
     color: inherit;
     text-decoration: none; }
-  #header ul {
+  #header ul.menu {
     list-style: none;
     margin: 0;
     padding-left: 0; }
-    #header ul li {
+    #header ul.menu li {
       display: inline-block;
       padding-left: 0; }
   #header h1 {
@@ -2229,16 +2200,16 @@ body {
     margin-left: 1.5em;
     overflow: hidden;
     padding-left: 1.5em; }
-    #header .links ul li {
+    #header .links ul.menu li {
       border-left: solid 1px rgba(160, 160, 160, 0.3);
       line-height: 1;
       margin-left: 1em;
       padding-left: 1em; }
-      #header .links ul li:first-child {
+      #header .links ul.menu li:first-child {
         border-left: 0;
         margin-left: 0;
         padding-left: 0; }
-      #header .links ul li a {
+      #header .links ul.menu li a {
         border-bottom: 0;
         font-family: "Raleway", Helvetica, sans-serif;
         font-size: 0.7em;
@@ -2249,18 +2220,18 @@ body {
     height: inherit;
     line-height: inherit;
     text-align: right; }
-    #header .main ul {
+    #header .main ul.menu {
       height: inherit;
       line-height: inherit; }
-      #header .main ul li {
+      #header .main ul.menu li {
         border-left: solid 1px rgba(160, 160, 160, 0.3);
         height: inherit;
         line-height: inherit;
         white-space: nowrap; }
-        #header .main ul li > * {
+        #header .main ul.menu li > * {
           display: block;
           float: left; }
-        #header .main ul li > a {
+        #header .main ul.menu li > a {
           text-decoration: none;
           border-bottom: 0;
           color: #aaaaaa;
@@ -2268,14 +2239,14 @@ body {
           position: relative;
           text-indent: 4em;
           width: 4em; }
-          #header .main ul li > a:before {
+          #header .main ul.menu li > a:before {
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
             font-family: FontAwesome;
             font-style: normal;
             font-weight: normal;
             text-transform: none !important; }
-          #header .main ul li > a:before {
+          #header .main ul.menu li > a:before {
             display: block;
             height: inherit;
             left: 0;
@@ -2321,6 +2292,12 @@ body {
       #header .main .search {
         display: none; } }
 
+body.toolbar-fixed #header {
+  top: 40px; }
+
+body.toolbar-fixed.toolbar-tray-open.toolbar-horizontal #header {
+  top: 82px; }
+
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
@@ -2339,6 +2316,7 @@ body {
   max-width: 100%;
   opacity: 1;
   padding: 4.5em;
+  padding-top: 103px !important;
   width: 90em; }
   body.is-menu-visible #wrapper {
     opacity: 0.15; }
