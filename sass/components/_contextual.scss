@@ -1,0 +1,7 @@
+.contextual {
+  display: none;
+}
+
+.contextual-region:hover .contextual {
+  display: block;
+}
